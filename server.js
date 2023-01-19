@@ -23,7 +23,7 @@ mongoose.connection
 const CheeseSchema = new mongoose.Schema({
     name: String, 
     image: String, 
-    title: String,
+    country: String,
 });
 
 const Cheese = mongoose.model("Cheese", CheeseSchema);
