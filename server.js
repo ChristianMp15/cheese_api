@@ -7,6 +7,7 @@ const morgan = require("morgan");
 const { PORT = 3210, DATABASE_URL } = process.env;
 
 const app = express();
+mongoose.set("strictQuery", true);
 
 mongoose.connect(DATABASE_URL, {
     // useUnifiedTopology: true,
