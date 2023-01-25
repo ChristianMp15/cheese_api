@@ -49,7 +49,7 @@ app.get("/cheese", async (req, res) => {
 });
 
 
-app.post("/cheese", async (req, res) => {
+app.post("/cheeses", async (req, res) => {
     try{
         res.json(await Cheese.create(req.body))
     }catch(error){
